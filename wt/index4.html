@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body{
+        background-image: url("home.jpg");
+        background-size: cover;
+    }
+    nav{
+       
+        background-color:blue;
+    }
+    img{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<body>
+    <nav>
+       <input type="checkbox" id="check">
+        <label for="check" class=""></label>
+        <label class="logo">ONLINE BANKING</label>
+        <ul>
+            <li><a href="homepage.html" class="active"> HOME </a></li>
+            <li><a href="index9.html"> <pre> ABOUT</pre> </a></li>
+        </ul>
+    </nav>
+    
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+          height: 50%;
+          width: 100%;
+          padding: 20px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        
+        /* Set a style for all buttons */
+        button {
+          background-color: #0080ff;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          border-radius: 20px;
+        }
+        
+        button:hover {
+          opacity: 0.8;
+        }
+        
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+          width: auto;
+          padding: 10px 15px;
+          background-color: #0080ff;
+        }
+        
+        /* Center the image and position the close button */
+        .imgcontainer {
+          text-align: center;
+          margin: 3px 0 3px 0;
+          position: relative;
+        }
+        
+        img.avatar {
+          height: 10%;
+          width: 20%;
+          border-radius: 50%;
+        }
+        
+        .container {
+          padding: 16px;
+        }
+        
+        span.psw {
+          float: right;
+          padding-top: 16px;
+        }
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+          padding-top: 60px;
+        }
+        
+        /* Modal Content/Box */
+        .modal-content {
+          background-color:white;
+          margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+          border: 1px solid #888;
+          width: 70%; 
+          height: 100%;/* Could be more or less, depending on screen size */
+        }
+        
+        /* The Close Button (x) */
+        .close {
+          position: absolute;
+          right: 25px;
+          top: 0;
+          color: #000;
+          font-size: 35px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: red;
+          cursor: pointer;
+        }
+        
+        /* Add Zoom Animation */
+        .animate {
+          -webkit-animation: animatezoom 0.6s;
+          animation: animatezoom 0.6s
+        }
+        
+        @-webkit-keyframes animatezoom {
+          from {-webkit-transform: scale(0)} 
+          to {-webkit-transform: scale(1)}
+        }
+          
+        @keyframes animatezoom {
+          from {transform: scale(0)} 
+          to {transform: scale(1)}
+        }
+        
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+          span.psw {
+             display: block;
+             float: none;
+          }
+          .cancelbtn {
+             width: 100%;
+          }
+        }
+        </style>
+        </head>
+        <body>     
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; position: absolute; top: 40% ; left:72% ;border-radius: 20px;" >LOGIN</button>
+       
+       
+        
+        
+        <div id="id01" class="modal">
+          
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="login.jpg" alt="Avatar" class="avatar">
+            </div>
+        
+            <div class="container">
+              <label for="uname"><b>USERNAME</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+        
+              <label for="psw"><b>PASSWORD</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                
+              <a href="homepage.html"><button type="submit">LOGIN</button></a>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+        
+            <div class="container" style="background-color:white">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+        
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script> 
+          <style>
+              body {font-family: Arial, Helvetica, sans-serif;}
+              * {box-sizing: border-box;}
+              
+              /* Full-width input fields */
+              input[type=text], input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background: #f1f1f1;
+              }
+              
+              /* Add a background color when the inputs get focus */
+              input[type=text]:focus, input[type=password]:focus {
+                background-color: #ddd;
+                outline: none;
+              }
+              
+              /* Set a style for all buttons */
+              button {
+                background-color: #0080ff;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                opacity: 0.9;
+              }
+              
+              button:hover {
+                opacity:1;
+              }
+              
+              /* Extra styles for the cancel button */
+              .cancelbtn {
+                padding: 14px 20px;
+                background-color: red;
+              }
+              
+              /* Float cancel and signup buttons and add an equal width */
+              .cancelbtn, .signupbtn {
+                float: left;
+                width: 50%;
+              }
+              
+              /* Add padding to container elements */
+              .container {
+                padding: 16px;
+              }
+              
+              /* The Modal (background) */
+              .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color:black;
+                padding-top: 50px;
+              }
+              
+              /* Modal Content/Box */
+              .modal-content {
+                background-color: #fefefe;
+                margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+                border: 1px solid black;
+                width: 80%; /* Could be more or less, depending on screen size */
+              }
+              
+              /* Style the horizontal ruler */
+              hr {
+                border: 1px solid #f1f1f1;
+                margin-bottom: 25px;
+              }
+               
+              /* The Close Button (x) */
+              .close {
+                position: absolute;
+                right: 35px;
+                top: 15px;
+                font-size: 40px;
+                font-weight: bold;
+                color: #f1f1f1;
+              }
+              
+              .close:hover,
+              .close:focus {
+                color:#0080ff;
+                cursor: pointer;
+              }
+              
+              /* Clear floats */
+              .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+              }
+              
+              /* Change styles for cancel button and signup button on extra small screens */
+              @media screen and (max-width: 300px) {
+                .cancelbtn, .signupbtn {
+                   width: 100%;
+                }
+              }
+              h1{
+                color: black;
+                text-align: center;
+              }
+              </style>
+              <body>
+              <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;position:absolute; top:60%; left: 70%;border-radius: 20px;">CREATE ACCOUNT</button>
+              
+              <div id="id02" class="modal">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="/action_page.php">
+                  <div class="container">
+                    <h1>CREATE ACCOUNT</h1>
+                    <hr>
+                    <label for="number"><b>ACCOUNT NUMBER</b></label>
+                    <input type="text" placeholder="Enter account number" name="number" required>
+                    <label for="name"><b>NAME</b></label>
+                    <input type="text" placeholder="Enter name" name="name" required>
+              
+                    <label for="email"><b>EMAIL</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+              
+                    <label for="psw"><b>PASSWORD</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                    <label for="psw-repeat"><b>CONFIRM PASSWORD</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                    
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+              
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+              
+                    <div class="clearfix">
+                      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                      <a href="homepage.html"><button type="submit" class="signupbtn">CREATE</button></a>
+                      
+                    </div>
+                  </div>
+                </form>
+              </div>
+              
+              <script>
+              // Get the modal
+              var modal = document.getElementById('id02');
+              
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+                if (event.target == modal) {
+                  modal.style.display = "none";
+                }
+              }
+              </script>
+              
+          
+               
+</body>
+</html>
